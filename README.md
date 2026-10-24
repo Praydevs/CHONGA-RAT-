@@ -1,4 +1,4 @@
-# Chonga Rat — multi-client operator panel
+# Chonga Rat — multi-client operator panel - for src download the .rar file 
 
 ![bind](https://img.shields.io/badge/bind-loopback%20default%2C%20LAN%20opt--in-39e0c8?style=flat-square)
 ![clients](https://img.shields.io/badge/clients-many%20at%20once-7c8cff?style=flat-square)
